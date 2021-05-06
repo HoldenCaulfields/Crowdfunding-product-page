@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Commissioner', sans-serif;
+}
+body {
+    width: 100%;
+    font-size: 16px;
+    background-color: rgba(136, 136, 136, 0.075);
+}
+p {
+    color: hsl(0, 0%, 48%);
+    line-height: 1.6;
+    margin-top: 15px;
+}
+h1 {
+    font-size: 30px;
+}
+        /* header */
+header {
+    background-image: url(image-hero-desktop.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    display: block;
+}
+header .head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+}
+header .head a {
+    color: white;
+    text-decoration: none;
+}
+header .head .logo {
+    font-size: 28px;
+    font-weight: 700;
+}
+header .head nav a{
+    margin-left: 40px;
+}
+header .head nav a:hover{
+    font-weight: 700;
+}
+header .head .btn-toggle {
+    display: none;
+    width: 20px;
+    height: 20px;
+}
+
+            /* Main */
+
+/*TOP*/
+main {
+    width: 50%;
+    margin: auto;
+    margin-top: -5%;
+}
+section {
+    background-color: white;
+    margin-bottom: 50px;
+    border-radius: 6px;
+    padding: 30px;
+}
+.top {
+    text-align: center;
+}
+main .mini-img {
+    display: block;
+    width: 50px;
+    margin: auto;
+    position: relative;
+    top: -50px;
+}
+.two-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-top: 30px;
+}
+.button {
+    width: 200px;
+    height: 45px;
+    background-color: hsl(176, 50%, 47%);
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 700;
+}
+.button:hover {
+    background-color: hsl(176, 72%, 28%);
+}
+main a {
+    text-decoration: none;
+    color: white;
+}
+.top h2 {
+    margin-top: -30px;
+}
+
+.top .two-button .bookmark {
+    width: 150px;
+    padding: 0;
+    text-align: left;
+    color: hsl(0, 0%, 48%);
+    background-color: hsla(0, 0%, 48%, 0.404);
+    display: flex;
+}
+.top .two-button .bookmark img {
+    width: 45px;
+    display: inline-block;
+}
+.top .two-button .bookmark span {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+/*MIDDLE*/
+.middle .numbers {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+}
+.middle .numbers .column p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+.middle .numbers .center {
+    padding: 0 16% 0 8%; 
+    border: 1px solid hsla(0, 0%, 48%, 0.425);
+    border-top: transparent;
+    border-bottom: transparent;
+}
+.progress {
+    width: 100%;
+    height: 15px;
+    background-color: hsla(0, 0%, 48%, 0.192);
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.progress .percent {
+    background-color: hsl(176, 50%, 47%);
+    width: 75%;
+    height: 15px;
+    border-radius: 10px;
+}
+
+/*BOTTOM*/
+
+.pledge {
+    margin-top: 40px;
+    border: 1px solid hsla(0, 0%, 48%, 0.432);
+    border-radius: 6px;
+    padding: 30px;
+}
+.pledge-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.bottom p {
+    margin-top: 20px;
+    font-size: 15px;
+}
+.pledge-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h4 {
+    color: hsl(176, 50%, 47%);
+}
+.pledge p {
+    margin-bottom: 20px;
+}
+.pledge h2 {
+    display: inline;
+}
+span {
+    color: hsl(0, 0%, 48%);
+}
+.pledge-bottom .out-of-stock {
+    background-color: rgba(122, 122, 122, 0.616);
+}
+.pledge-container .three {
+    opacity: 0.5;
+}
+
+/*MOBILE 375px*/
+@media screen and (max-width: 375px) {
+    body {
+        width: 100%;
+    }
+    header {
+        background-image: url(image-hero-mobile.jpg); 
+        background-size: contain;
+    }
+    header .head .btn-toggle {
+        display: block;
+        margin-top: 10px;
+    }
+    header nav {
+        display: none;
+    }
+    header .head {
+        padding-top: 20px;
+    }
+
+    main {
+        width: 90%;
+        margin-top: -40%;
+    }
+    section {
+        margin-bottom: 30px;
+    }
+    .top .two-button .bookmark {
+        width: 45px;
+    }
+    .top .two-button .bookmark span {
+        display: none;
+    }
+
+    .middle .numbers {
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .middle .numbers .center {
+        padding: 20px 0 20px 0; 
+        border: 1px solid hsla(0, 0%, 48%, 0.425);
+        border-left: transparent;
+        border-right: transparent;
+    }
+    .middle .numbers .column {
+        margin-bottom: 20px;
+    }
+
+    .pledge-top {
+        flex-direction: column;
+    }
+    .pledge-bottom {
+        flex-direction: column;
+    }
+    .pledge-bottom a {
+        margin-top: 20px;
+        width: 150px;
+    }
+}
+/*MODAL CONTAINER*/
+/* .modal-container {
+    display: block;
+} */
+/*MODAL COMPLETED*/
+.modal-completed {
+    width: 40%;
+    margin: auto;
+    background-color: white;
+    border-radius: 6px;
+    text-align: center;
+    padding: 40px;
+    display: none;
+    position: fixed;
+    top: 25%;
+    left: 30%;
+    z-index: 90;
+}
+.modal-completed img {
+    margin-bottom: 20px;
+}
+.modal-completed .got-it {
+    margin: auto;
+    margin-top: 20px;
+    width: 100px;
+    color: white;
+}
+/*modal-selection*/
+.modal-selection {
+    width: 50%;
+    background-color: white;
+    margin: auto;
+    padding: 40px;
+    border-radius: 6px;
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+.modal-selection .close-icon {
+    float: right;
+}
+.modal-selection .column-modal {
+    margin-top: 20px;
+    border: 1px solid hsla(0, 0%, 48%, 0.589);
+    border-radius: 6px;
+    padding: 20px;
+    
+}
+.modal-selection .column-modal .top-modal .hover-top-modal span {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    
+    border-radius: 50%;
+    border: 1px solid hsla(0, 0%, 48%, 0.589);
+}
+.modal-selection .column-modal .top-modal .hover-top-modal i {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-color: hsl(176, 50%, 47%);
+    border-radius: 50%;
+    margin: 6px;
+    /* display: none; */
+}
+.modal-selection #xxx:hover {
+    border: 2px solid hsl(176, 50%, 47%);
+}
+
+/* .modal-selection .column-modal .top-modal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} */
+
+.modal-selection .column-modal h2,h3,h4 {
+    display: inline-block;
+    margin-left: 10px;
+}
+.modal-selection .column-modal .top-modal a {
+    text-decoration: none;
+    color: black;
+}
+.modal-selection #xxx .top-modal a:hover {
+    color: hsl(176, 50%, 47%);
+}
+.modal-selection .column-modal p {
+    margin-left: 45px;
+}
+
+.modal-selection .column-modal .top-modal {
+    position: relative;
+}
+.modal-selection .column-modal .top-modal .top-modal-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.modal-selection .column-modal .pledge-selected-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid hsla(0, 0%, 48%, 0.589);
+    margin-top: 20px;
+    padding-top: 20px;
+    display: none;
+}
+.modal-selection .column-modal .pledge-selected-start .pledge-dolar-box {
+    display: flex;
+    flex-direction: row; 
+}
+.modal-selection .column-modal .pledge-selected-start .pledge-dolar-box .button {
+    width: 100px;
+    margin-left: 10px;
+}
+.modal-selection .column-modal .pledge-selected-start .pledge-dolar-box .dolar {
+    background-color: white;
+    border: 1px solid hsl(176, 50%, 47%);
+}
+.four {
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 375px) {
+    .modal-completed {
+        width: 90%;
+        left: 20px;
+    }
+    .modal-selection {
+        width: 90%;
+        left: 20px;
+    }
+    .modal-selection .column-modal .top-modal .top-modal-right {
+        position: relative;
+    }
+    .modal-selection .column-modal .pledge-selected-start {
+        flex-direction: column;
+        align-items: center;
+    }
+    .modal-selection .column-modal .pledge-selected-start .pledge-dolar-box {
+        margin-top: 20px;
+       
+    }
+}
+
+/*Bookmarked */
+.top .two-button .bookmarked {
+    width: 170px;
+    color: hsl(176, 50%, 47%);
+    background-color: hsla(176, 50%, 47%, 0.329);
+    
+}
+.bookmarked img {
+    width: 45px;
+    display: inline-block;
+    content: url(icon-bookmarked.svg);
+}
+.bookmarked span {
+    color: hsl(176, 58%, 35%);
+}
